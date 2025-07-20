@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Korean Mart</title>
+  <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="Image/png" href="img/WebLogo.png" sizes="20x20">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+ <header class="navbar">
+  <div class="logo">🛒 D-Korean Mart</div>
+  
+  <nav class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">Ramen</a>
+    <a href="#">Buldak</a>
+    <a href="#">Drinks</a>
+    <a href="#">Samgyupsal Meats</a>
+  </nav>
+  
+  <div class="nav-actions">
+    <div class="search-container">
+      <input type="text" placeholder="Search..." class="search-input" />
+      <i class="fas fa-search search-icon"></i>
+    </div>
+    <button class="login-btn">Login</button>
+    <div class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-count">0</span>
+    </div>
+  </div>
+</header>
+
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>D-Korean Mart</h1>
+      <p class="hero-subtitle">
+        <span class="korean-text">정통 삼겹살, 한국 음식, 음료를 판매하는 곳입니다.</span> 
+        <br>Your go-to for authentic samgyup meats, Korean eats, and drinks.
+      </p>
+      <a href="#" class="shop-btn">Shop Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="hero-bubbles">
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="products-header">
+      <h2>Popular Products</h2>
+      <p>Discover our authentic Korean favorites</p>
+      <div class="category-tabs">
+        <button class="tab active">All</button>
+        <button class="tab">Drinks</button>
+        <button class="tab">Ramen</button>
+        <button class="tab">Meats</button>
+        <button class="tab">Snacks</button>
+      </div>
+    </div>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-badge">Best Seller</div>
+        <div class="product-image">
+          <img src="img/soju.jpg" alt="Soju" />
+        </div>
+        <div class="product-info">
+          <h3>Jinro Chamisul Fresh SOJU</h3>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>(128)</span>
+          </div>
+          <p class="price">₱69.00 <span class="old-price">₱79.00</span></p>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-badge">Hot</div>
+        <div class="product-image">
+          <img src="img/carbonara.jpg" alt="Buldak" />
+        </div>
+        <div class="product-info">
+          <h3>Buldak Carbonara Hot Chicken Flavor Ramen</h3>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <span>(96)</span>
+          </div>
+          <p class="price">₱73.00</p>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/kape.jpg" alt="Ramen" />
+        </div>
+        <div class="product-info">
+          <h3>Binggrae coffee</h3>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(215)</span>
+          </div>
+          <p class="price">₱53.00</p>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/lunchon.png" alt="Kimchi" />
+        </div>
+        <div class="product-info">
+          <h3>Hansung Luncheon Meat</h3>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>(78)</span>
+          </div>
+          <p class="price">₱99.00</p>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-badge">New</div>
+        <div class="product-image">
+          <img src="img/banana.jpg" alt="Meat" />
+        </div>
+        <div class="product-info">
+          <h3>Binggrae Banana Milk Drink</h3>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(342)</span>
+          </div>
+          <p class="price">₱59.00</p>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/carbocream.jpg" alt="Rice Cake" />
+        </div>
+        <div class="product-info">
+          <h3>Buldak Hot Carbocream Flavor</h3>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <span>(64)</span>
+          </div>
+          <p class="price">₱76.00</p>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="featured-section">
+      <div class="featured-image">
+        <img src="img/soju.jpg" alt="Featured Korean Food" />
+        <div class="discount-tag">-20% OFF</div>
+      </div>
+      <div class="featured-content">
+        <span class="featured-label">SPECIAL OFFER</span>
+        <h3>Authentic Korean Taste</h3>
+        <p>Experience the true flavors of Korea with our premium selection of traditional foods and ingredients. Each product is carefully selected to bring you the most authentic Korean culinary experience.</p>
+        <div class="deal-timer">
+          <p>Hurry! Offer ends in:</p>
+          <div class="timer">
+            <div class="timer-box">
+              <span id="hours">12</span>
+              <span>Hours</span>
+            </div>
+            <div class="timer-box">
+              <span id="minutes">45</span>
+              <span>Minutes</span>
+            </div>
+            <div class="timer-box">
+              <span id="seconds">30</span>
+              <span>Seconds</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="shop-btn">Explore All Products <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="newsletter-container">
+      <div class="newsletter-text">
+        <h3>Join Our Newsletter</h3>
+        <p>Subscribe to get updates on special offers and new products</p>
+      </div>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Korean Mart</h4>
+        <p>Your authentic Korean grocery store with the best selection of Korean food, drinks, and ingredients.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">All Products</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Best Sellers</a></li>
+          <li><a href="#">Special Offers</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Returns & Refunds</a></li>
+          <li><a href="#">Track Order</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About Us</h4>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Store Locations</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 D-Korean Mart. All Rights Reserved.</p>
+    
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
