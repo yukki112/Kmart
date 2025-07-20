@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200;1,6..72,200&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Gugi&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200;1,6..72,200&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 
 :root {
   --primary-color: #d36c84;
@@ -12,6 +12,7 @@
   --white: #ffffff;
   --shadow: 0 5px 15px rgba(0,0,0,0.1);
   --transition: all 0.3s ease;
+  --success-color: #4CAF50;
 }
 
 * {
@@ -25,9 +26,10 @@ body {
   background-color: var(--light-color);
   color: var(--text-color);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
-
+/* Navigation */
 .navbar {
   background-color: rgba(255, 255, 255, 0.98);
   padding: 1.2rem 5rem;
@@ -47,6 +49,13 @@ body {
   font-weight: bold;
   color: var(--primary-color);
   font-family: 'Pacifico', cursive;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo i {
+  font-size: 1.5rem;
 }
 
 .nav-links {
@@ -115,6 +124,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   color: var(--light-text);
+  cursor: pointer;
 }
 
 .login-btn {
@@ -164,28 +174,27 @@ body {
   font-weight: bold;
 }
 
+.animate {
+  animation: bounce 0.5s;
+}
 
+@keyframes bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+/* Hero Section */
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 8rem 5rem;
-  background-image: url('img/backgournd3.png');
+  background-image: linear-gradient(rgba(255, 240, 245, 0.8), rgba(255, 240, 245, 0.8)), url('img/backgournd3.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
   min-height: 80vh;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(255, 240, 245, 0.8) 0%, rgba(255, 240, 245, 0.4) 100%);
 }
 
 .hero-text {
@@ -215,6 +224,7 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   margin-bottom: 0.5rem;
   font-size: 1.1em;
+  font-weight: 500;
 }
 
 .shop-btn {
@@ -257,7 +267,6 @@ body {
   z-index: 0;
 }
 
-
 .bubble {
   position: absolute;
   bottom: -100px;
@@ -267,8 +276,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.6);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); 
 }
-
-
 
 .bubble:nth-child(1) {
   width: 40px;
@@ -323,7 +330,7 @@ body {
   }
 }
 
-
+/* Products Section */
 .products {
   padding: 6rem 5rem;
   background-color: var(--white);
@@ -421,6 +428,14 @@ body {
   z-index: 1;
 }
 
+.product-badge.hot {
+  background: #FF5722;
+}
+
+.product-badge.new {
+  background: var(--success-color);
+}
+
 .product-image {
   height: 280px;
   overflow: hidden;
@@ -500,7 +515,12 @@ body {
   color: white;
 }
 
+.add-to-cart.added {
+  background-color: var(--success-color);
+  color: white;
+}
 
+/* Featured Section */
 .featured-section {
   display: flex;
   align-items: center;
@@ -625,7 +645,7 @@ body {
   text-transform: uppercase;
 }
 
-
+/* Newsletter Section */
 .newsletter {
   background: linear-gradient(135deg, var(--primary-color) 0%, #e55d7d 100%);
   padding: 4rem 2rem;
@@ -689,7 +709,7 @@ body {
   transform: translateY(-2px);
 }
 
-
+/* Footer */
 .footer {
   background-color: var(--dark-color);
   color: white;
@@ -801,7 +821,28 @@ body {
   opacity: 1;
 }
 
+/* Notification */
+.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--success-color);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
 
+.notification.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Responsive Design */
 @media (max-width: 1200px) {
   .hero-text h1 {
     font-size: 4rem;
